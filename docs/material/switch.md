@@ -2,7 +2,7 @@
     This is the api of version dev04. Newer versions may have a different one
     
 <p align="left">
-  <img src ="https://raw.githubusercontent.com/Foso/Jetpack-Compose-Playground/master/docs/screenshots/SwtichDemo.png" height=500 />
+  <img src ="../../images/SwtichDemo.png" height=500 />
 </p>
 
 
