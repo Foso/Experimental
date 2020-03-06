@@ -6,7 +6,7 @@
 ```kotlin
 @Composable
         /**
-         * @see wiki [https://github.com/Foso/Jetpack-Compose-Playground/Column]
+         * @see wi ki [https://github.com/Foso/Jetpack-Compose-Playground/Column]
          */
 fun ColumnDemo() {
     CraneWrapper {
