@@ -1,3 +1,8 @@
+
+## What is Jetpack Compose?
+ Jetpack Compose is an Android’s modern toolkit for building native UI rebuilt mostly from scratch by Google. You can find docs and more info about it in the [official docs](https://developer.android.com/jetpack/compose)
+
+
 <h1 align="center">Jetpack Compose Playground</h1>
 
 [![jCenter](https://img.shields.io/badge/MIT-green.svg)](https://github.com/Foso/Jetpack-Compose-Playground/blob/master/LICENSE)

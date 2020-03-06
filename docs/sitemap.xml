@@ -2,12 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://foso.github.io/Experimental/</loc>
-     <lastmod>2020-03-05</lastmod>
+     <lastmod>2020-03-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://foso.github.io/Experimental/wiki/Column/</loc>
-     <lastmod>2020-03-05</lastmod>
+     <loc>https://foso.github.io/Experimental/wiki/general/helloworld/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/general/compose_lifecycle/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/get_android_context/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/general/draw_on_canvas/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/foundation/clickable/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/foundation/vertical_scroller/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/foundation/horizontal_scroller/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/foundation/draggable/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/core/pressgesturedetector/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/Layout/Column/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/Layout/row/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/material/switch/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/material/checkbox/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/material/radiogroup/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/material/alertdialog/</loc>
+     <lastmod>2020-03-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/wiki/resources/</loc>
+     <lastmod>2020-03-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

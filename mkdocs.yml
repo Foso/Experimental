@@ -14,10 +14,19 @@ theme:
 nav:
   - 'Jetpack Compose':
       - 'Overview': index.md
-      - 'Guides':
+      - 'Guides & Samples':
           - 'General':
-              - 'Hello World Compose': wiki/helloworld.md
+              - 'Hello World Compose': wiki/general/helloworld.md
+              - 'Compose Lifecycle': wiki/general/compose_lifecycle.md
               - 'How to get Android Context': wiki/get_android_context.md
+              - 'How to draw on Canvas': wiki/general/draw_on_canvas.md
+          - 'Foundation':
+              - 'Clickable': wiki/foundation/clickable.md
+              - 'VerticalScroller': wiki/foundation/vertical_scroller.md
+              - 'HorizontalScroller': wiki/foundation/horizontal_scroller.md
+              - 'Draggable': wiki/foundation/draggable.md
+          - 'Core':
+              - 'PressGestureDetector': wiki/core/pressgesturedetector.md
           - 'Layout':
               - 'Column': wiki/Layout/Column.md
               - 'Row': wiki/Layout/row.md
@@ -25,6 +34,8 @@ nav:
               - 'Switch': wiki/material/switch.md
               - 'Checkbox': wiki/material/checkbox.md
               - 'RadioGroup': wiki/material/radiogroup.md
+              - 'AlertDialog': wiki/material/alertdialog.md
+      - 'Resources': wiki/resources.md
 
 markdown_extensions:
   - smarty
