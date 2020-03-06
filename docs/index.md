@@ -41,35 +41,35 @@ Documentation avaible at: https://github.com/Foso/Jetpack-Compose-Playground/wik
 
 
 # How to get started?
-* [How to write a Compose function ?](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Hello-World-Compose)
-* [Get Android Context in Compose Function ?](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Get-Android-Context-in-Compose-Function)
+* [How to write a Compose function ?](https://github.com/Foso/Jetpack-Compose-Playground/Hello-World-Compose)
+* [Get Android Context in Compose Function ?](https://github.com/Foso/Jetpack-Compose-Playground/Get-Android-Context-in-Compose-Function)
 
 
 # Lifecycle 
-* [Lifecycle](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Lifecycle)
+* [Lifecycle](https://github.com/Foso/Jetpack-Compose-Playground/Lifecycle)
 
 # Layouts 
-* [Stack](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Stack)
+* [Stack](https://github.com/Foso/Jetpack-Compose-Playground/Stack)
 * Flex
-* [VerticalScroller](https://github.com/Foso/Jetpack-Compose-Playground/wiki/VerticalScroller)
-* [HorizontalScroller](https://github.com/Foso/Jetpack-Compose-Playground/wiki/HorizontalScroller)
-* [Column](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Column)
-* [Row](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Row)
+* [VerticalScroller](https://github.com/Foso/Jetpack-Compose-Playground/VerticalScroller)
+* [HorizontalScroller](https://github.com/Foso/Jetpack-Compose-Playground/HorizontalScroller)
+* [Column](https://github.com/Foso/Jetpack-Compose-Playground/Column)
+* [Row](https://github.com/Foso/Jetpack-Compose-Playground/Row)
 * Container
-* [Padding](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Padding)
+* [Padding](https://github.com/Foso/Jetpack-Compose-Playground/Padding)
 
-* [How to draw to canvas?](https://github.com/Foso/Jetpack-Compose-Playground/wiki/How-to-draw-to-canvas%3F)
+* [How to draw to canvas?](https://github.com/Foso/Jetpack-Compose-Playground/How-to-draw-to-canvas%3F)
 
 # GestureDetectors
-* [PressGestureDetector](https://github.com/Foso/Jetpack-Compose-Playground/wiki/PressGestureDetector)
-* [Draggable](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Draggable)
-* [Clickable](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Clickable)
+* [PressGestureDetector](https://github.com/Foso/Jetpack-Compose-Playground/PressGestureDetector)
+* [Draggable](https://github.com/Foso/Jetpack-Compose-Playground/Draggable)
+* [Clickable](https://github.com/Foso/Jetpack-Compose-Playground/Clickable)
 
 # Material
-* [Switch](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Switch)
-* [Checkbox](https://github.com/Foso/Jetpack-Compose-Playground/wiki/Checkbox)
-* [RadioGroup](https://github.com/Foso/Jetpack-Compose-Playground/wiki/RadioGroup)
-* [AlertDialog](https://github.com/Foso/Jetpack-Compose-Playground/wiki/AlertDialog)
+* [Switch](https://github.com/Foso/Jetpack-Compose-Playground/Switch)
+* [Checkbox](https://github.com/Foso/Jetpack-Compose-Playground/Checkbox)
+* [RadioGroup](https://github.com/Foso/Jetpack-Compose-Playground/RadioGroup)
+* [AlertDialog](https://github.com/Foso/Jetpack-Compose-Playground/AlertDialog)
 
 
 
