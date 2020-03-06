@@ -3,7 +3,7 @@
 https://developer.android.com/reference/kotlin/androidx/ui/foundation/gestures/package-summary#draggable
 
 <p align="left">
-  <img src ="/images/DraggableDemo.png" height=500 />
+  <img src ="../../images/DraggableDemo.png" height=500 />
 </p>
 
 ```kotlin
