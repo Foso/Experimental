@@ -1,7 +1,7 @@
 # VerticalScroller
 
 !!! info
-    This the api of version dev04. Newer versions may have a different one
+    This is the api of version dev04. Newer versions may have a different one
 
 https://developer.android.com/reference/kotlin/androidx/ui/foundation/package-summary#verticalscroller
 

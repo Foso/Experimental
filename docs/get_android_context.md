@@ -1,5 +1,5 @@
 !!! info
-    This the api of version dev04. Newer versions may have a different one
+    This is the api of version dev04. Newer versions may have a different one
     
 You can use ambient(ContextAmbient) to receive the context of your Android App inside a Compose Function
 
