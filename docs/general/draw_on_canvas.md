@@ -1,5 +1,5 @@
 <p align="left">
-  <img src ="/images/CanvasDrawExample.png" height=500 />
+  <img src ="../../images/CanvasDrawExample.png" height=500 />
 </p>
 
 
