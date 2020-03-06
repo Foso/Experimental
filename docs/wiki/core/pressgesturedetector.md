@@ -1,8 +1,8 @@
 You can use a PressGestureDetector to detect when a compose element gets pressed and released.
 
 <p align="left">
-  <img src ="/wiki/images/PressGesturePressed.png" height=500 />
-<img src ="/wiki/images/PressGestureReleased.png" height=500 />
+  <img src ="/Experimental/wiki/images/PressGesturePressed.png" height=500 />
+<img src ="/Experimental/wiki/images/PressGestureReleased.png" height=500 />
 </p>
 
 ```kotlin
