@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://foso.github.io/Experimental/material/alertdialog/">
+        <link rel="canonical" href="https://foso.github.io/Experimental/general/draw_on_canvas/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>AlertDialog - Experimental - GUIDE</title>
+        <title>How to draw on Canvas - Experimental - GUIDE</title>
       
     
     
@@ -109,7 +109,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                AlertDialog
+                How to draw on Canvas
               
             </span>
           
@@ -297,10 +297,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-1" type="checkbox" id="nav-1-2-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-1" type="checkbox" id="nav-1-2-1" checked>
     
     <label class="md-nav__link" for="nav-1-2-1">
       General
@@ -318,7 +320,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/helloworld/" title="Hello World Compose" class="md-nav__link">
+    <a href="../helloworld/" title="Hello World Compose" class="md-nav__link">
       Hello World Compose
     </a>
   </li>
@@ -330,7 +332,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/compose_lifecycle/" title="Compose Lifecycle" class="md-nav__link">
+    <a href="../compose_lifecycle/" title="Compose Lifecycle" class="md-nav__link">
       Compose Lifecycle
     </a>
   </li>
@@ -352,11 +354,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../general/draw_on_canvas/" title="How to draw on Canvas" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="How to draw on Canvas" class="md-nav__link md-nav__link--active">
       How to draw on Canvas
     </a>
+    
   </li>
 
         
@@ -525,12 +534,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-5" type="checkbox" id="nav-1-2-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-5" type="checkbox" id="nav-1-2-5">
     
     <label class="md-nav__link" for="nav-1-2-5">
       Material
@@ -548,7 +555,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../switch/" title="Switch" class="md-nav__link">
+    <a href="../../material/switch/" title="Switch" class="md-nav__link">
       Switch
     </a>
   </li>
@@ -560,7 +567,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../checkbox/" title="Checkbox" class="md-nav__link">
+    <a href="../../material/checkbox/" title="Checkbox" class="md-nav__link">
       Checkbox
     </a>
   </li>
@@ -572,7 +579,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../radiogroup/" title="RadioGroup" class="md-nav__link">
+    <a href="../../material/radiogroup/" title="RadioGroup" class="md-nav__link">
       RadioGroup
     </a>
   </li>
@@ -582,18 +589,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="AlertDialog" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../material/alertdialog/" title="AlertDialog" class="md-nav__link">
       AlertDialog
     </a>
-    
   </li>
 
         
@@ -637,60 +637,52 @@
               
 
 
-<span style="float: right">🤔 Documentation issue? <a href="https://github.com/foso/leakcanary/issues/new?assignees=&labels=type%3A+documentation&template=4-doc.md&title=Doc%20issue%20with%20material/alertdialog/%20page">Report</a> or <a href="https://github.com/Foso/Experimental/edit/master/docs/material/alertdialog.md">edit</a></span>
+<span style="float: right">🤔 Documentation issue? <a href="https://github.com/foso/leakcanary/issues/new?assignees=&labels=type%3A+documentation&template=4-doc.md&title=Doc%20issue%20with%20general/draw_on_canvas/%20page">Report</a> or <a href="https://github.com/Foso/Experimental/edit/master/docs/general/draw_on_canvas.md">edit</a></span>
 
 
 
-<h1>AlertDialog</h1>
+<h1>How to draw on Canvas</h1>
 
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This is the api of version dev04. Newer versions may have a different one</p>
-</div>
 <p align="left">
-  <img src ="../../images/AlertDialogSample.png" height=500 />
+  <img src ="../../images/CanvasDrawExample.png" height=500 />
 </p>
 
 <div class="codehilite"><pre><span></span><span class="n">@Composable</span>
-<span class="k">fun</span> <span class="nf">AlertDialogSample</span><span class="p">()</span> <span class="p">{</span>
+<span class="k">fun</span> <span class="nf">CanvasDrawExample</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">MaterialTheme</span> <span class="p">{</span>
-        <span class="n">Column</span> <span class="p">{</span>
-            <span class="k">val</span> <span class="py">openDialog</span> <span class="p">=</span> <span class="p">+</span><span class="n">state</span> <span class="p">{</span> <span class="k">false</span> <span class="p">}</span>
+        <span class="n">Container</span><span class="p">(</span><span class="n">height</span> <span class="p">=</span> <span class="m">60.</span><span class="n">dp</span><span class="p">,</span> <span class="n">expanded</span> <span class="p">=</span> <span class="k">true</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">val</span> <span class="py">paint</span> <span class="p">=</span> <span class="n">Paint</span><span class="p">()</span>
+            <span class="n">Draw</span> <span class="p">{</span> <span class="n">canvas</span><span class="p">,</span> <span class="n">parentSize</span> <span class="p">-&gt;</span>
+                <span class="k">val</span> <span class="py">centerY</span> <span class="p">=</span> <span class="m">0f</span>
 
-            <span class="n">Button</span><span class="p">(</span><span class="s">&quot;Click me &quot;</span><span class="p">,</span> <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
-                <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">true</span>
-            <span class="p">})</span>
-
-            <span class="k">if</span> <span class="p">(</span><span class="n">openDialog</span><span class="p">.</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">AlertDialog</span><span class="p">(</span>
-                    <span class="n">onCloseRequest</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">false</span>
-                    <span class="p">},</span>
-                    <span class="n">title</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Text</span><span class="p">(</span><span class="n">text</span> <span class="p">=</span> <span class="s">&quot;Dialog Title&quot;</span><span class="p">)</span>
-                    <span class="p">},</span>
-                    <span class="n">text</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Text</span><span class="p">(</span><span class="s">&quot;Here is a text &quot;</span><span class="p">)</span>
-                    <span class="p">},</span>
-                    <span class="n">confirmButton</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Button</span><span class="p">(</span>
-                            <span class="s">&quot;This is the Confirm Button&quot;</span><span class="p">,</span>
-                            <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
-                                <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">false</span>
-                            <span class="p">})</span>
-                    <span class="p">},</span>
-                    <span class="n">dismissButton</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Button</span><span class="p">(</span>
-                            <span class="s">&quot;This is the dismiss Button&quot;</span><span class="p">,</span>
-                            <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
-                                <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">false</span>
-                            <span class="p">})</span>
-                    <span class="p">},</span>
-                    <span class="n">buttonLayout</span> <span class="p">=</span> <span class="n">AlertDialogButtonLayout</span><span class="p">.</span><span class="n">Stacked</span>
+                <span class="c1">// draw rect</span>
+                <span class="n">paint</span><span class="p">.</span><span class="n">color</span> <span class="p">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Blue</span>
+                <span class="n">canvas</span><span class="p">.</span><span class="n">drawRect</span><span class="p">(</span>
+                    <span class="n">Rect</span><span class="p">(</span>
+                        <span class="m">0f</span><span class="p">,</span>
+                        <span class="n">centerY</span> <span class="p">+</span> <span class="m">10</span><span class="p">,</span>
+                        <span class="n">parentSize</span><span class="p">.</span><span class="n">width</span><span class="p">.</span><span class="n">value</span><span class="p">,</span>
+                        <span class="m">55f</span>
+                    <span class="p">),</span>
+                    <span class="n">paint</span>
                 <span class="p">)</span>
+
+                <span class="c1">// draw circle</span>
+                <span class="n">canvas</span><span class="p">.</span><span class="n">drawCircle</span><span class="p">(</span>
+                    <span class="n">Offset</span><span class="p">(</span><span class="m">50f</span><span class="p">,</span> <span class="m">200f</span><span class="p">),</span> <span class="m">40f</span><span class="p">,</span> <span class="n">paint</span>
+                <span class="p">)</span>
+
+                <span class="c1">//Draw a line</span>
+                <span class="n">paint</span><span class="p">.</span><span class="n">color</span> <span class="p">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Red</span>
+                <span class="n">paint</span><span class="p">.</span><span class="n">strokeWidth</span> <span class="p">=</span> <span class="m">5f</span>
+                <span class="n">canvas</span><span class="p">.</span><span class="n">drawLine</span><span class="p">(</span>
+                    <span class="n">Offset</span><span class="p">(</span><span class="m">20f</span><span class="p">,</span> <span class="m">0f</span><span class="p">),</span>
+                    <span class="n">Offset</span><span class="p">(</span><span class="m">200f</span><span class="p">,</span> <span class="m">200f</span><span class="p">),</span>
+                    <span class="n">paint</span>
+                <span class="p">)</span>
+
             <span class="p">}</span>
         <span class="p">}</span>
-
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -714,7 +706,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../radiogroup/" title="RadioGroup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../get_android_context/" title="How to get Android Context" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -723,19 +715,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                RadioGroup
+                How to get Android Context
               </span>
             </div>
           </a>
         
         
-          <a href="../../resources/" title="Resources" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../foundation/clickable/" title="Clickable" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Resources
+                Clickable
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

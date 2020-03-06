@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://foso.github.io/Experimental/material/alertdialog/">
+        <link rel="canonical" href="https://foso.github.io/Experimental/core/pressgesturedetector/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>AlertDialog - Experimental - GUIDE</title>
+        <title>PressGestureDetector - Experimental - GUIDE</title>
       
     
     
@@ -109,7 +109,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                AlertDialog
+                PressGestureDetector
               
             </span>
           
@@ -441,10 +441,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-3" type="checkbox" id="nav-1-2-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-3" type="checkbox" id="nav-1-2-3" checked>
     
     <label class="md-nav__link" for="nav-1-2-3">
       Core
@@ -460,11 +462,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../core/pressgesturedetector/" title="PressGestureDetector" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="PressGestureDetector" class="md-nav__link md-nav__link--active">
       PressGestureDetector
     </a>
+    
   </li>
 
         
@@ -525,12 +534,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-5" type="checkbox" id="nav-1-2-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-5" type="checkbox" id="nav-1-2-5">
     
     <label class="md-nav__link" for="nav-1-2-5">
       Material
@@ -548,7 +555,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../switch/" title="Switch" class="md-nav__link">
+    <a href="../../material/switch/" title="Switch" class="md-nav__link">
       Switch
     </a>
   </li>
@@ -560,7 +567,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../checkbox/" title="Checkbox" class="md-nav__link">
+    <a href="../../material/checkbox/" title="Checkbox" class="md-nav__link">
       Checkbox
     </a>
   </li>
@@ -572,7 +579,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../radiogroup/" title="RadioGroup" class="md-nav__link">
+    <a href="../../material/radiogroup/" title="RadioGroup" class="md-nav__link">
       RadioGroup
     </a>
   </li>
@@ -582,18 +589,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="AlertDialog" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../material/alertdialog/" title="AlertDialog" class="md-nav__link">
       AlertDialog
     </a>
-    
   </li>
 
         
@@ -637,60 +637,40 @@
               
 
 
-<span style="float: right">🤔 Documentation issue? <a href="https://github.com/foso/leakcanary/issues/new?assignees=&labels=type%3A+documentation&template=4-doc.md&title=Doc%20issue%20with%20material/alertdialog/%20page">Report</a> or <a href="https://github.com/Foso/Experimental/edit/master/docs/material/alertdialog.md">edit</a></span>
+<span style="float: right">🤔 Documentation issue? <a href="https://github.com/foso/leakcanary/issues/new?assignees=&labels=type%3A+documentation&template=4-doc.md&title=Doc%20issue%20with%20core/pressgesturedetector/%20page">Report</a> or <a href="https://github.com/Foso/Experimental/edit/master/docs/core/pressgesturedetector.md">edit</a></span>
 
 
 
-<h1>AlertDialog</h1>
+<h1>PressGestureDetector</h1>
 
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This is the api of version dev04. Newer versions may have a different one</p>
-</div>
+<p>You can use a PressGestureDetector to detect when a compose element gets pressed and released.</p>
 <p align="left">
-  <img src ="../../images/AlertDialogSample.png" height=500 />
+  <img src ="/Experimental/images/PressGesturePressed.png" height=500 />
+<img src ="/Experimental/images/PressGestureReleased.png" height=500 />
 </p>
 
 <div class="codehilite"><pre><span></span><span class="n">@Composable</span>
-<span class="k">fun</span> <span class="nf">AlertDialogSample</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">MaterialTheme</span> <span class="p">{</span>
+<span class="k">fun</span> <span class="nf">PressGestureDetectorDemo</span><span class="p">()</span> <span class="p">{</span>
+
+    <span class="k">val</span> <span class="py">posX</span> <span class="p">=</span> <span class="p">+</span><span class="n">state</span> <span class="p">{</span> <span class="m">0f</span> <span class="p">}</span>
+    <span class="k">val</span> <span class="py">posXY</span> <span class="p">=</span> <span class="p">+</span><span class="n">state</span> <span class="p">{</span> <span class="m">0f</span> <span class="p">}</span>
+    <span class="k">val</span> <span class="py">clickState</span> <span class="p">=</span> <span class="p">+</span><span class="n">state</span> <span class="p">{</span> <span class="s">&quot;&quot;</span> <span class="p">}</span>
+
+    <span class="n">PressGestureDetector</span><span class="p">(</span>
+        <span class="n">onPress</span> <span class="p">=</span> <span class="p">{</span> <span class="n">position</span> <span class="p">-&gt;</span>
+            <span class="n">posX</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">value</span>
+            <span class="n">posXY</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">.</span><span class="n">value</span>
+            <span class="n">clickState</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="s">&quot;Pressed&quot;</span>
+        <span class="p">},</span>
+        <span class="n">onRelease</span> <span class="p">=</span> <span class="p">{</span>
+            <span class="n">clickState</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="s">&quot;Released&quot;</span>
+        <span class="p">})</span> <span class="p">{</span>
+
         <span class="n">Column</span> <span class="p">{</span>
-            <span class="k">val</span> <span class="py">openDialog</span> <span class="p">=</span> <span class="p">+</span><span class="n">state</span> <span class="p">{</span> <span class="k">false</span> <span class="p">}</span>
-
-            <span class="n">Button</span><span class="p">(</span><span class="s">&quot;Click me &quot;</span><span class="p">,</span> <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
-                <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">true</span>
-            <span class="p">})</span>
-
-            <span class="k">if</span> <span class="p">(</span><span class="n">openDialog</span><span class="p">.</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">AlertDialog</span><span class="p">(</span>
-                    <span class="n">onCloseRequest</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">false</span>
-                    <span class="p">},</span>
-                    <span class="n">title</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Text</span><span class="p">(</span><span class="n">text</span> <span class="p">=</span> <span class="s">&quot;Dialog Title&quot;</span><span class="p">)</span>
-                    <span class="p">},</span>
-                    <span class="n">text</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Text</span><span class="p">(</span><span class="s">&quot;Here is a text &quot;</span><span class="p">)</span>
-                    <span class="p">},</span>
-                    <span class="n">confirmButton</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Button</span><span class="p">(</span>
-                            <span class="s">&quot;This is the Confirm Button&quot;</span><span class="p">,</span>
-                            <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
-                                <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">false</span>
-                            <span class="p">})</span>
-                    <span class="p">},</span>
-                    <span class="n">dismissButton</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Button</span><span class="p">(</span>
-                            <span class="s">&quot;This is the dismiss Button&quot;</span><span class="p">,</span>
-                            <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
-                                <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">false</span>
-                            <span class="p">})</span>
-                    <span class="p">},</span>
-                    <span class="n">buttonLayout</span> <span class="p">=</span> <span class="n">AlertDialogButtonLayout</span><span class="p">.</span><span class="n">Stacked</span>
-                <span class="p">)</span>
-            <span class="p">}</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s">&quot;ClickState: &quot;</span> <span class="p">+</span> <span class="n">clickState</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s">&quot;PostitionX: ${posX.value}&quot;</span><span class="p">)</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s">&quot;PostitionY: ${posXY.value}&quot;</span><span class="p">)</span>
         <span class="p">}</span>
-
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -714,7 +694,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../radiogroup/" title="RadioGroup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../foundation/draggable/" title="Draggable" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -723,19 +703,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                RadioGroup
+                Draggable
               </span>
             </div>
           </a>
         
         
-          <a href="../../resources/" title="Resources" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Layout/Column/" title="Column" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Resources
+                Column
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

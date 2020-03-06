@@ -3,6 +3,8 @@ repo_name: Experimental
 
 repo_url: https://github.com/Foso/Experimental
 site_url: https://foso.github.io/Experimental
+site_dir: 'docs'
+docs_dir: 'mkdocs'
 theme:
   name: 'material'
   custom_dir: 'docs/theme'

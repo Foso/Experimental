@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://foso.github.io/Experimental/material/alertdialog/">
+        <link rel="canonical" href="https://foso.github.io/Experimental/general/helloworld/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>AlertDialog - Experimental - GUIDE</title>
+        <title>Hello World Compose - Experimental - GUIDE</title>
       
     
     
@@ -87,6 +87,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#hello-world-compose" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -109,7 +113,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                AlertDialog
+                Hello World Compose
               
             </span>
           
@@ -297,10 +301,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-1" type="checkbox" id="nav-1-2-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-1" type="checkbox" id="nav-1-2-1" checked>
     
     <label class="md-nav__link" for="nav-1-2-1">
       General
@@ -316,11 +322,56 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../general/helloworld/" title="Hello World Compose" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Hello World Compose
+      </label>
+    
+    <a href="./" title="Hello World Compose" class="md-nav__link md-nav__link--active">
       Hello World Compose
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-simple-compose-function" class="md-nav__link">
+    Write a simple Compose function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-a-compose-function-as-a-view-in-your-android-app" class="md-nav__link">
+    Use a Compose function as a view in your android app
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -330,7 +381,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/compose_lifecycle/" title="Compose Lifecycle" class="md-nav__link">
+    <a href="../compose_lifecycle/" title="Compose Lifecycle" class="md-nav__link">
       Compose Lifecycle
     </a>
   </li>
@@ -354,7 +405,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/draw_on_canvas/" title="How to draw on Canvas" class="md-nav__link">
+    <a href="../draw_on_canvas/" title="How to draw on Canvas" class="md-nav__link">
       How to draw on Canvas
     </a>
   </li>
@@ -525,12 +576,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-5" type="checkbox" id="nav-1-2-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-5" type="checkbox" id="nav-1-2-5">
     
     <label class="md-nav__link" for="nav-1-2-5">
       Material
@@ -548,7 +597,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../switch/" title="Switch" class="md-nav__link">
+    <a href="../../material/switch/" title="Switch" class="md-nav__link">
       Switch
     </a>
   </li>
@@ -560,7 +609,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../checkbox/" title="Checkbox" class="md-nav__link">
+    <a href="../../material/checkbox/" title="Checkbox" class="md-nav__link">
       Checkbox
     </a>
   </li>
@@ -572,7 +621,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../radiogroup/" title="RadioGroup" class="md-nav__link">
+    <a href="../../material/radiogroup/" title="RadioGroup" class="md-nav__link">
       RadioGroup
     </a>
   </li>
@@ -582,18 +631,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="AlertDialog" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../material/alertdialog/" title="AlertDialog" class="md-nav__link">
       AlertDialog
     </a>
-    
   </li>
 
         
@@ -631,66 +673,73 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-simple-compose-function" class="md-nav__link">
+    Write a simple Compose function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-a-compose-function-as-a-view-in-your-android-app" class="md-nav__link">
+    Use a Compose function as a view in your android app
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
 
 
-<span style="float: right">🤔 Documentation issue? <a href="https://github.com/foso/leakcanary/issues/new?assignees=&labels=type%3A+documentation&template=4-doc.md&title=Doc%20issue%20with%20material/alertdialog/%20page">Report</a> or <a href="https://github.com/Foso/Experimental/edit/master/docs/material/alertdialog.md">edit</a></span>
+<span style="float: right">🤔 Documentation issue? <a href="https://github.com/foso/leakcanary/issues/new?assignees=&labels=type%3A+documentation&template=4-doc.md&title=Doc%20issue%20with%20general/helloworld/%20page">Report</a> or <a href="https://github.com/Foso/Experimental/edit/master/docs/general/helloworld.md">edit</a></span>
 
 
 
-<h1>AlertDialog</h1>
-
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This is the api of version dev04. Newer versions may have a different one</p>
-</div>
-<p align="left">
-  <img src ="../../images/AlertDialogSample.png" height=500 />
-</p>
-
+<h1 id="hello-world-compose">Hello World Compose<a class="headerlink" href="#hello-world-compose" title="Permanent link">&para;</a></h1>
+<h3 id="write-a-simple-compose-function">Write a simple Compose function<a class="headerlink" href="#write-a-simple-compose-function" title="Permanent link">&para;</a></h3>
+<p>A basic Compose View is using a normal Kotlin function which is annotated with @Composable</p>
 <div class="codehilite"><pre><span></span><span class="n">@Composable</span>
-<span class="k">fun</span> <span class="nf">AlertDialogSample</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">MaterialTheme</span> <span class="p">{</span>
-        <span class="n">Column</span> <span class="p">{</span>
-            <span class="k">val</span> <span class="py">openDialog</span> <span class="p">=</span> <span class="p">+</span><span class="n">state</span> <span class="p">{</span> <span class="k">false</span> <span class="p">}</span>
+<span class="k">fun</span> <span class="nf">HelloWorld</span><span class="p">()</span> <span class="p">{</span>
+   <span class="n">Text</span><span class="p">(</span><span class="n">text</span> <span class="p">=</span> <span class="s">&quot;Hello World!&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
 
-            <span class="n">Button</span><span class="p">(</span><span class="s">&quot;Click me &quot;</span><span class="p">,</span> <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
-                <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">true</span>
-            <span class="p">})</span>
+<h3 id="use-a-compose-function-as-a-view-in-your-android-app">Use a Compose function as a view in your android app<a class="headerlink" href="#use-a-compose-function-as-a-view-in-your-android-app" title="Permanent link">&para;</a></h3>
+<p>To use the HelloWorld() function in your App you have to use the setContent() extension function inside a onCreate() in an Activity.</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="n">AppCompatActivity</span><span class="p">()</span> <span class="p">{</span>
 
-            <span class="k">if</span> <span class="p">(</span><span class="n">openDialog</span><span class="p">.</span><span class="n">value</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">AlertDialog</span><span class="p">(</span>
-                    <span class="n">onCloseRequest</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">false</span>
-                    <span class="p">},</span>
-                    <span class="n">title</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Text</span><span class="p">(</span><span class="n">text</span> <span class="p">=</span> <span class="s">&quot;Dialog Title&quot;</span><span class="p">)</span>
-                    <span class="p">},</span>
-                    <span class="n">text</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Text</span><span class="p">(</span><span class="s">&quot;Here is a text &quot;</span><span class="p">)</span>
-                    <span class="p">},</span>
-                    <span class="n">confirmButton</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Button</span><span class="p">(</span>
-                            <span class="s">&quot;This is the Confirm Button&quot;</span><span class="p">,</span>
-                            <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
-                                <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">false</span>
-                            <span class="p">})</span>
-                    <span class="p">},</span>
-                    <span class="n">dismissButton</span> <span class="p">=</span> <span class="p">{</span>
-                        <span class="n">Button</span><span class="p">(</span>
-                            <span class="s">&quot;This is the dismiss Button&quot;</span><span class="p">,</span>
-                            <span class="n">onClick</span> <span class="p">=</span> <span class="p">{</span>
-                                <span class="n">openDialog</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="k">false</span>
-                            <span class="p">})</span>
-                    <span class="p">},</span>
-                    <span class="n">buttonLayout</span> <span class="p">=</span> <span class="n">AlertDialogButtonLayout</span><span class="p">.</span><span class="n">Stacked</span>
-                <span class="p">)</span>
-            <span class="p">}</span>
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="n">Bundle</span><span class="p">?)</span> <span class="p">{</span>
+        <span class="k">super</span><span class="p">.</span><span class="n">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+
+        <span class="n">setContent</span> <span class="p">{</span>
+                <span class="n">HelloWorld</span><span class="p">()</span>
         <span class="p">}</span>
-
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -714,7 +763,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../radiogroup/" title="RadioGroup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../.." title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -723,19 +772,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                RadioGroup
+                Overview
               </span>
             </div>
           </a>
         
         
-          <a href="../../resources/" title="Resources" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../compose_lifecycle/" title="Compose Lifecycle" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Resources
+                Compose Lifecycle
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

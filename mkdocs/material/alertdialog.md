@@ -13,7 +13,7 @@ fun AlertDialogSample() {
         Column {
             val openDialog = +state { false }
 
-            Button("Click me", onClick = {
+            Button("Click me ", onClick = {
                 openDialog.value = true
             })
 
