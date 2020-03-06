@@ -5,13 +5,43 @@ repo_url: https://github.com/Foso/Experimental
 site_url: https://foso.github.io/Experimental
 theme:
   name: 'material'
+  custom_dir: 'docs/theme'
   palette:
     primary: 'deep-blue'
     accent: 'deep-purple'
   feature:
     tabs: true
-
 nav:
-  - 'Overview': index.md
-  - 'Column': wiki/Column.md
+  - 'Jetpack Compose':
+      - 'Overview': index.md
+      - 'Guides':
+          - 'General':
+              - 'Hello World Compose': wiki/helloworld.md
+              - 'How to get Android Context': wiki/get_android_context.md
+          - 'Layout':
+              - 'Column': wiki/Layout/Column.md
+              - 'Row': wiki/Layout/row.md
+          - 'Material':
+              - 'Switch': wiki/material/switch.md
+              - 'Checkbox': wiki/material/checkbox.md
+              - 'RadioGroup': wiki/material/radiogroup.md
+
+markdown_extensions:
+  - smarty
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.emoji
+  - tables
+  - admonition
 

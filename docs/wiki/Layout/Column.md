@@ -1,6 +1,6 @@
 # Column
 <p align="left">
-  <img src ="https://github.com/Foso/Jetpack-Compose-Playground/blob/master/docs/screenshots/ColumnExample.png" height=500 />
+  <img src ="https://raw.githubusercontent.com/Foso/Jetpack-Compose-Playground/master/docs/screenshots/ColumnExample.png" height=500 />
 </p>
 
 ```kotlin
@@ -24,3 +24,4 @@ fun ColumnExample() {
     }
 }
 ```
+[View Source](")
