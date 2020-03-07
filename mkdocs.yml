@@ -3,10 +3,12 @@ repo_name: Experimental
 
 repo_url: https://github.com/Foso/Experimental
 site_url: https://foso.github.io/Experimental
-
+site_dir: 'docs'
+docs_dir: 'mkdocs'
+edit_uri: 'mkdocs/'
 theme:
   name: 'material'
-  custom_dir: 'docs/theme'
+  custom_dir: 'mkdocs/theme'
   palette:
     primary: 'deep-blue'
     accent: 'deep-purple'
@@ -17,6 +19,7 @@ nav:
       - 'Overview': index.md
       - 'Guides & Samples':
           - 'General':
+              - 'Project Setup': general/getting_started.md
               - 'Hello World Compose': general/helloworld.md
               - 'Compose Lifecycle': general/compose_lifecycle.md
               - 'How to get Android Context': get_android_context.md
@@ -29,7 +32,7 @@ nav:
           - 'Core':
               - 'PressGestureDetector': core/pressgesturedetector.md
           - 'Layout':
-              - 'Column': Layout/Column.md
+              - 'Column': Layout/column.md
               - 'Row': Layout/row.md
           - 'Material':
               - 'Switch': material/switch.md
@@ -49,6 +52,7 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
+  - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.smartsymbols
