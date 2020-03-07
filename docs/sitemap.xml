@@ -21,7 +21,7 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://foso.github.io/Experimental/get_android_context/</loc>
+     <loc>https://foso.github.io/Experimental/general/get_android_context/</loc>
      <lastmod>2020-03-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -62,6 +62,11 @@
     </url>
     <url>
      <loc>https://foso.github.io/Experimental/Layout/row/</loc>
+     <lastmod>2020-03-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://foso.github.io/Experimental/Layout/stack/</loc>
      <lastmod>2020-03-07</lastmod>
      <changefreq>daily</changefreq>
     </url>

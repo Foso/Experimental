@@ -5,26 +5,12 @@ When an app has layout content that might be longer than the width of the device
 ```kotlin
 
 @Composable
-        /**
-         * @see wiki [https://github.com/Foso/Jetpack-Compose-Playground/HorizontalScroller]
-         */
-fun HorizontalScrollerDemo() {
-
-    MaterialTheme {
-        FlexColumn {
-            HorizontalScrollerExample()
-        }
-    }
-
-}
-
-@Composable
 fun HorizontalScrollerExample() {
     HorizontalScroller {
         //Only one child is allowed in a HorizontalScroller
         Row {
             for (i in 0..100) {
-                Text("$i Hello World!", style = +themeTextStyle { body1 })
+                Text("$i Hello World!", style =(MaterialTheme.typography()).body1)
             }
         }
     }

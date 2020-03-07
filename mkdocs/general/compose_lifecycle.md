@@ -1,5 +1,5 @@
 !!! info
-    This is the api of version dev04. Newer versions may have a different one
+    This is the api of version dev06. Newer versions may have a different one
     
 Compose has some "effects"-function that can be used in compose function to track the lifecycle of a function.
 
@@ -19,20 +19,20 @@ When the count value gets 3 +onDispose{} inside the if-clause will be called.
 ```kotlin
 @Composable
 fun LifecycleDemo() {
-    MaterialTheme {
         val count = state { 0 }
 
         Column {
-            Button(text = "Click me", onClick = {
+            Button(onClick = {
                 count.value++
-            })
+            }) {
+                Text("Click me")
+            }
 
             if (count.value < 3) {
                 onActive { Log.d("Compose", "onactive with value: " + count.value) }
                 onDispose { Log.d("Compose", "onDispose because value=" + count.value) }
-                Text(text = "You have clicked the button: " + count.value.toString())
+                Text("You have clicked the button: " + count.value.toString())
             }
         }
-    }
 }
 ```

@@ -13,4 +13,3 @@ fun ColumnExample() {
 }
 
 ```
-[View Source](")

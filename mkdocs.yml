@@ -22,7 +22,7 @@ nav:
               - 'Project Setup': general/getting_started.md
               - 'Hello World Compose': general/helloworld.md
               - 'Compose Lifecycle': general/compose_lifecycle.md
-              - 'How to get Android Context': get_android_context.md
+              - 'How to get Android Context': general/get_android_context.md
               - 'How to draw on Canvas': general/draw_on_canvas.md
           - 'Foundation':
               - 'Clickable': foundation/clickable.md
@@ -34,6 +34,7 @@ nav:
           - 'Layout':
               - 'Column': Layout/column.md
               - 'Row': Layout/row.md
+              - 'Stack': Layout/stack.md
           - 'Material':
               - 'Switch': material/switch.md
               - 'Checkbox': material/checkbox.md

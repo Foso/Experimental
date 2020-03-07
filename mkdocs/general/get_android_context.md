@@ -6,9 +6,7 @@ You can use ambient(ContextAmbient) to receive the context of your Android App i
 ```kotlin 
 @Composable
 fun AndroidContextComposeDemo() {
-    MaterialTheme {
-        val context = ambient(ContextAmbient)
+        val context = ContextAmbient.current
         Text("Read this string from Context: "+context.getString(R.string.app_name))
-    }
 }
 ```
