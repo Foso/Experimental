@@ -1,7 +1,7 @@
 # Stack
 
 !!! info
-    This is the api of version dev06. Newer versions may have a different one
+    This is the API of version dev06. Newer versions may have a different one
 
 
 <p align="left">
