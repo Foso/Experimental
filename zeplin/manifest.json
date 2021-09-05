@@ -1,0 +1,37 @@
+{
+  "packageName": "zeplin_compose",
+  "name": "Zeplin Compose",
+  "description": "Generates Compose code",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jens Klingenberg",
+    "email": "mail@jensklingenberg.de",
+    "url": "jensklingenberg.de"
+  },
+  "options": [
+    {
+      "name": "Color/Style class name Prefix",
+      "type": "text",
+      "id": "classPrefix",
+      "default": ""
+    },
+    {
+      "name": "Handle Screens?  Warning, this can be very cpu intensive",
+      "type": "switch",
+      "id": "handleScreens",
+      "default": false
+    },
+    {
+      "name": "Generates Flutter code for many aspects for your design",
+      "type": "switch",
+      "id": "useLinkedStyleguides",
+      "default": true
+    }
+  ],
+  "platforms": [
+    "android"
+  ],
+  "moduleURL": "./main.5f64d1d0.js",
+  "repository": "https://github.com.git",
+  "readmeURL": "./README.md"
+}
