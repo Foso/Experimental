@@ -1,5 +1,4 @@
-# Jetpack Compose Playground 
-
+# Jetpack 
 ## Introduction
 This is a collection of Jetpack Compose examples/tutorials and demos.
 
