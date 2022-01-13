@@ -8,7 +8,7 @@ jobs:
         uses: actions/setup-java@v2.5.0
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
-          java-version: '17'
+          java-version: '8'
       
       - name: Checkout 🛎️
         uses: actions/checkout@v2
