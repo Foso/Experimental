@@ -10,7 +10,7 @@ jobs:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
       - name: Install dependencies
-        run: sh test.sh
+        run: ./gradlew fatJar
         working-directory: generator    
       - name: Checkout 🛎️
         uses: actions/checkout@v2
