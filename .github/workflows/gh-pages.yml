@@ -11,6 +11,8 @@ jobs:
           java-version: '17'
       - name: Install 
         run: |
+            pwd
+            ls
             cd generator
             ./gradlew fatJar
       - name: Checkout 🛎️
