@@ -3,28 +3,19 @@ on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash test.sh
-        working-directory: generator
-
     steps:
       - name: Setup Java JDK
         uses: actions/setup-java@v2.5.0
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
-          java-version: '17'
-      - name: Install 
-        run: |
-            pwd
-            ls
-            cd generator
-            ./gradlew fatJar
+          java-version: '8'
+      
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: |
+      - name: Install dependencies
+        run: sh test.sh
+        working-directory: generator   
           
 
       - name: Deploy 🚀
