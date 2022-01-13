@@ -1,18 +1,18 @@
-name: build and deploy mkdocs to github pages
-on:
-  push:
-    branches:
-      - master
+name: Build and Deploy
+on: [push]
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
-          submodules: "recursive" 
-          fetch-depth: 0       # Fetch all history for .GitInfo and .Lastmod
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.GH_SECRET }}
-          publish_dir: ./site
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
