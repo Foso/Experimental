@@ -16,8 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
              echo $PWD
-             sh test.sh
-        working-directory: ./Experimental      
+             sh test.sh   
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
