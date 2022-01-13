@@ -17,11 +17,8 @@ jobs:
         run: |
              echo $PWD
              sh test.sh
-        working-directory: generator   
-          
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+          folder: web # The folder the action should deploy.
