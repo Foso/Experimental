@@ -3,20 +3,17 @@ on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-        working-directory: generator
-
     steps:
       - name: Setup Java JDK
         uses: actions/setup-java@v2.5.0
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
-      - name: Install 
+      - name: Generating meme...
         run: |
-            sh test.sh
+          echo $PWD
+          java -jar gh-meme-maker.main.jar --issue-number "${{github.event.issue.number}}" --comment-id "${{github.event.comment.id}}"
+          echo "All done!"
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
