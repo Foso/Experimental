@@ -2,3 +2,4 @@
 ./gradlew fatJar
 echo $PWD
 java -jar ./build/libs/Generator-1.0-SNAPSHOT-all.jar -d $PWD
+echo "All done!"
