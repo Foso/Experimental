@@ -1,3 +1,3 @@
 
-rootProject.name = "Folders2kt"
+rootProject.name = "Generator"
 
