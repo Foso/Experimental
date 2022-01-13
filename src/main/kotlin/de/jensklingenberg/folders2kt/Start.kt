@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
     val folderPath = cmdArgs[dirParameterIndex + 1]
 
 
-   File(folderPath+"/Hallo.txt").writeText("Hallo")
+   File(folderPath+"/web/Hallo.txt").writeText("Hallo")
 
 
 }
