@@ -11,7 +11,8 @@ jobs:
           java-version: '17'
       - name: Generating meme...
         run: |
-          echo $PWD
+          cd generator
+          sh test.sh
           java -jar gh-meme-maker.main.jar --issue-number "${{github.event.issue.number}}" --comment-id "${{github.event.comment.id}}"
           echo "All done!"
       - name: Checkout 🛎️
