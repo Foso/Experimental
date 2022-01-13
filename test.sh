@@ -1,8 +1,10 @@
 #!/bin/bash
 ./gradlew fatJar
 echo $PWD
-java -jar ./Experimental/build/libs/Generator-1.0-SNAPSHOT-all.jar -d $PWD
+ls
+java -jar ./build/libs/Generator-1.0-SNAPSHOT-all.jar -d $PWD
 cd ..
+ls
 echo $PWD
 
 echo "All done!"
