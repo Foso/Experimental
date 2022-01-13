@@ -9,12 +9,9 @@ jobs:
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
-      - name: Generating meme...
-        run: |
-          cd generator
-          sh test.sh
-          java -jar gh-meme-maker.main.jar --issue-number "${{github.event.issue.number}}" --comment-id "${{github.event.comment.id}}"
-          echo "All done!"
+      - name: Install dependencies
+        run: sh test.sh
+        working-directory: generator    
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
