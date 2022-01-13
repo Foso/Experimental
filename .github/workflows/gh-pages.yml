@@ -17,7 +17,7 @@ jobs:
         run: |
              echo $PWD
              sh test.sh
-        working-directory: Experimental      
+        working-directory: ./Experimental      
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
