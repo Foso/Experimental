@@ -3,7 +3,23 @@ on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: generator
+
     steps:
+      - name: Setup Java JDK
+        uses: actions/setup-java@v2.5.0
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '17'
+      - name: Install 
+        run: |
+            pwd
+            ls
+            cd generator
+            ./gradlew fatJar
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
