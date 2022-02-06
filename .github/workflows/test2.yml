@@ -38,3 +38,5 @@ jobs:
       - run: |
           echo "${{ toJSON(needs) }}"
           echo "A: Result ${{ needs.A.result }}"
+          echo "B: Result ${{ needs.B.result }}"
+          echo "C: Result ${{ needs.C.result }}"
