@@ -32,8 +32,3 @@ jobs:
     steps:
       - name: test-fail
         run: echo "${{ job.status == 'success' && 'good' || 'danger' }}"
-      - name: Slack Notification
-        uses: rtCamp/action-slack-notify@v2.2.0
-        env:
-          SLACK_CHANNEL: alert
-          SLACK_COLOR: "${{ job.status == 'success' && 'good' || 'danger' }}"
