@@ -35,4 +35,6 @@ jobs:
     # you can add conditions if needed e.g.
     # !contains(needs.*.result, 'failure')
     steps:
-      - run: echo "${{ toJSON(needs) }}"
+      - run: |
+          echo "${{ toJSON(needs) }}"
+          echo "A: Result ${{ needs.A.result }}"
