@@ -21,6 +21,6 @@ fun main(args: Array<String>) {
     val folderPath = cmdArgs[dirParameterIndex + 1]
 
    //File(folderPath+"/web/Hallo.txt").mkdirs()
-    File(folderPath+"/web/Hallo.html").writeText("<div>Hallo</div>")
+    File(folderPath+"/web/index.html").writeText("<div>Hallo</div>")
 
 }
